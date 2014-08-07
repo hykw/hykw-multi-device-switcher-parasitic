@@ -30,8 +30,7 @@ class hykwMDSP
 	case self::MOBILE:
 	  return $device;
     }
-    echo 1;
     
+    return self::OTHERS;
   }
 }
-
