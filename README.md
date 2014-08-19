@@ -8,14 +8,14 @@ parasitic multi-device-switcher wordpress plugin
 It just returns the user-agent string with a function in multi-device-switcher plugin.
 
 ## Usage
-
 You just calls hykwMDSP::getDevice(). it returns the followings:
-        hykwMDSP::SP
-        hykwMDSP::TABLET
-        hykwMDSP::MOBILE
-             -> cellular phone
-        hykwMDSP::OTHERS
-             -> pc, bot, etc...
+
+    hykwMDSP::SP
+    hykwMDSP::TABLET
+    hykwMDSP::MOBILE
+         -> cellular phone
+    hykwMDSP::OTHERS
+         -> pc, bot, etc...
 
 ## Example
     function isSmartPhone()
