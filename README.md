@@ -21,10 +21,12 @@ You just calls hykwMDSP::getDevice(). it returns the followings:
     function isSmartPhone()
     {
       switch (hykwMDSP::getDevice()) {
-          case hykwMDSP::SP:
-            return TRUE;
+      case hykwMDSP::SP:
+        return TRUE;
       }
 
       return FALSE;
     }
 
+## License
+MIT
