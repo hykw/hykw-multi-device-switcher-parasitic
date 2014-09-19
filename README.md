@@ -1,32 +1,19 @@
 hykw-multi-device-switcher-parasitic
 ====================================
 
-parasitic multi-device-switcher wordpress plugin
+# -----Warning-----
 
-## Description
+As of Version 1.3.0, multi-device-switcher plugin has supported `is_multi_device()` function. I'll use the function in multi-device-switcher, this plugin won't be maintained any more!
 
-It just returns the user-agent string with a function in multi-device-switcher plugin.
+    c.f.
+      http://blog.thingslabo.com/archives/000400.html
 
-## Usage
-You just calls hykwMDSP::getDevice(). it returns the followings:
-
-    hykwMDSP::SP
-    hykwMDSP::TABLET
-    hykwMDSP::MOBILE
-         -> cellular phone
-    hykwMDSP::OTHERS
-         -> pc, bot, etc...
-
-## Example
+## Usage: `is_multi__device()`
     function isSmartPhone()
     {
-      switch (hykwMDSP::getDevice()) {
-      case hykwMDSP::SP:
+      if (is_multi_device('smart'))
         return TRUE;
-      }
-
+    
       return FALSE;
     }
 
-## License
-MIT
